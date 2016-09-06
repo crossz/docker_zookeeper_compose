@@ -4,7 +4,7 @@ echo $MYID is my id
 
 # wait until docker-compose gets all of the zookeeper containers running
 # partially to start up the zookeeper cluster.
-for host in 'zookeeper1' 'zookeeper2' 'zookeeper3' 'zookeeper4' 'zookeeper5'
+for host in 'zookeeper1' 'zookeeper2' 'zookeeper3'
 do
     # http://stackoverflow.com/questions/6118948/bash-loop-ping-successful
     ((count = 10))
