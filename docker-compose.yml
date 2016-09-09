@@ -11,6 +11,8 @@ services:
       - back
     ports:
       - "21811:2181"
+      - "28881:2888"
+      - "38881:3888"
   zookeeper2:
     build:
       dockerfile: Dockerfile.zookeeper
@@ -21,6 +23,8 @@ services:
       - back
     ports:
       - "21812:2181"
+      - "28882:2888"
+      - "38882:3888"
   zookeeper3:
     build:
       dockerfile: Dockerfile.zookeeper
@@ -31,6 +35,8 @@ services:
       - back
     ports:
       - "21813:2181"
+      - "28883:2888"
+      - "38883:3888"
 
   zkcli:
     build:

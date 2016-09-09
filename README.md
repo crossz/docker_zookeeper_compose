@@ -20,5 +20,11 @@ five server Zookeeper instance:_
 docker-compose run --rm zkcli -server zookeeper3
 ```
 
+_Check zookeeper status:_
+```shell
+docker-compose exec zookeeper3 /opt/zookeeper/bin/zkServer.sh status
+```
+
+
 _There is an intro to zkcli here: [Connecting To
 ZooKeeper](https://zookeeper.apache.org/doc/r3.4.8/zookeeperStarted.html#sc_ConnectingToZooKeeper)._
